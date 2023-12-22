@@ -3,13 +3,8 @@ import de from './locales/de-DE.json'
 import zh from './locales/zhHans-ZH.json'
 
 export const I18nConfig = {
-    globalInjection: true,
     legacy: false,
     locale: 'de',
-    availableLocales: ['en-US', 'es-ES', 'zhHans-ZH'],
-    // TODO: Disable for go Live
-    fallbackWarn: true,
-    missingWarn: false,
     messages: {
         en,
         de,

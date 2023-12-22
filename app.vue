@@ -112,7 +112,7 @@ const items = [
       <VMain>
         <VDivider class="ma-5" />
         <VSelect v-model="$i18n.locale" :items="$i18n.availableLocales" variant="solo" />
-        <p>{{ $t('language') }}</p>
+        <div class="vuetifyStyles">{{ $t('language') }}</div>
         <VDivider class="ma-5" />
         <VDataTable :headers="headers" :items="items" :items-per-page="5" item-value="name"></VDataTable>
       </VMain>
