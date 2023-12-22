@@ -1,0 +1,9 @@
+{
+    "language": "Language",
+    "$vuetify": {
+        "dataFooter": {
+            "itemsPerPageText": "Text überschrieben",
+            "pageText": "Text überschrieben"
+        }
+    }
+}
