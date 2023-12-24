@@ -30,6 +30,14 @@ export default {
         locale: 'de',
         fallback: 'en',
         messages: { zhHans, en, de }
+    },
+    defaults: {
+        VDivider: {
+            thickness: 8
+        },
+        VSelect: {
+            variant: 'solo'
+        }
     }
 } satisfies ExternalVuetifyOptions
 
