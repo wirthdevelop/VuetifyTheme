@@ -1,6 +1,6 @@
 import type { ExternalVuetifyOptions } from 'vuetify-nuxt-module';
 // import type { ThemeDefinition } from 'vuetify';
-import { en, de, zhHans } from 'vuetify/locale'
+import { en, de, zhHans } from 'vuetify/locale';
 
 // const themeInternalLight: ThemeDefinition = {
 //     dark: false,
@@ -17,8 +17,8 @@ import { en, de, zhHans } from 'vuetify/locale'
 // }
 
 export default {
-    labComponents: true,
     directives: true,
+    labComponents: true,
     theme: {
         defaultTheme: 'light',
         // themes: {
@@ -31,13 +31,19 @@ export default {
         fallback: 'en',
         messages: { zhHans, en, de }
     },
+    aliases: {
+        CSelect: 'VSelect',
+    },
     defaults: {
+        // Globle Custom Configs
+        CSelect: {
+            // variant: 'yellow',
+            class: ['basic']
+        },
+        // Globle Vuetify Configs
         VDivider: {
             thickness: 8
         },
-        VSelect: {
-            variant: 'solo'
-        }
     }
-} satisfies ExternalVuetifyOptions
+} satisfies ExternalVuetifyOptions;
 

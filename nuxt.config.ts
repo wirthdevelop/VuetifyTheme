@@ -8,11 +8,8 @@ export default defineNuxtConfig({
   vuetify: {
     moduleOptions: {
       styles: {
-        configFile: './assets/vuetify/styles.scss'
+        configFile: './assets/vuetify/custom.scss'
       }
-      // ssrClientHints: {
-      //   prefersColorScheme: true
-      // }
     },
     vuetifyOptions: './vuetify.config.ts'
   }
