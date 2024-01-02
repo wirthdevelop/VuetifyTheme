@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
+  components: [
+    {
+      pathPrefix: false,
+    },
+  ],
   modules: [
     'vuetify-nuxt-module', '@nuxtjs/i18n'
   ],
