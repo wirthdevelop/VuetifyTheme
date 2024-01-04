@@ -1,9 +1,5 @@
 <template>
-    <NuxtLayout :name="layout">
-        <NuxtPage />
-    </NuxtLayout>
+    <div>
+        The main of the page
+    </div>
 </template>
-
-<script setup lang="ts">
-const layout = "desktop-default";
-</script>

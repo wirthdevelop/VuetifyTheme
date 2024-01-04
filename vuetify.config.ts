@@ -31,9 +31,23 @@ export default {
         fallback: 'en',
         messages: { zhHans, en, de }
     },
+    aliases: {
+        NavigationDrawer: 'VNavigationDrawer',
+        NotificationDrawer: 'VNavigationDrawer',
+        SettingsDrawer: 'VNavigationDrawer',
+    },
     defaults: {
         VLayout: {
             fullHeight: true,
+        },
+        NavigationDrawer: {
+
+        },
+        NotificationDrawer: {
+
+        },
+        SettingsDrawer: {
+
         },
     }
 } satisfies ExternalVuetifyOptions;

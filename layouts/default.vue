@@ -1,5 +1,6 @@
 <template>
-    <VLayout>
-        <slot />
-    </VLayout>
+    <slot name="navigation">
+
+    </slot>
+    <slot />
 </template>

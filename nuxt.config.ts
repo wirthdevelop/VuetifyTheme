@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   vuetify: {
     moduleOptions: {
       styles: {
-        configFile: './assets/vuetify/custom.scss'
+        configFile: './assets/vuetify/additionalVariants.scss'
       }
     },
     vuetifyOptions: './vuetify.config.ts'
