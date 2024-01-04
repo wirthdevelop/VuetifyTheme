@@ -1,5 +1,3 @@
 <template>
-    <NavigationDrawer>
-
-    </NavigationDrawer>
+    <slot />
 </template>

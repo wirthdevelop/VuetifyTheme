@@ -1,5 +1,4 @@
 import type { ExternalVuetifyOptions } from 'vuetify-nuxt-module';
-// import type { ThemeDefinition } from 'vuetify';
 import { en, de, zhHans } from 'vuetify/locale';
 
 // const themeInternalLight: ThemeDefinition = {
@@ -33,8 +32,8 @@ export default {
     },
     aliases: {
         NavigationDrawer: 'VNavigationDrawer',
-        NotificationDrawer: 'VNavigationDrawer',
-        SettingsDrawer: 'VNavigationDrawer',
+        // NotificationDrawer: 'VNavigationDrawer',
+        // SettingsDrawer: 'VNavigationDrawer',
     },
     defaults: {
         VLayout: {
@@ -43,12 +42,11 @@ export default {
         NavigationDrawer: {
 
         },
-        NotificationDrawer: {
+        // NotificationDrawer: {
 
-        },
-        SettingsDrawer: {
+        // },
+        // SettingsDrawer: {
 
-        },
+        // },
     }
 } satisfies ExternalVuetifyOptions;
-
