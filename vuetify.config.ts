@@ -31,18 +31,9 @@ export default {
         fallback: 'en',
         messages: { zhHans, en, de }
     },
-    aliases: {
-        CSelect: 'VSelect',
-    },
     defaults: {
-        // Globle Custom Configs
-        CSelect: {
-            // variant: 'yellow',
-            class: ['basic']
-        },
-        // Globle Vuetify Configs
-        VDivider: {
-            thickness: 8
+        VLayout: {
+            fullHeight: true,
         },
     }
 } satisfies ExternalVuetifyOptions;
