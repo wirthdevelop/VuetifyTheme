@@ -14,23 +14,13 @@
                 <VBreadcrumbs :items="breadcrumbs"></VBreadcrumbs>
             </template>
             <template v-slot:append>
-                <v-btn icon>
-                    <v-icon>mdi-magnify</v-icon>
-                </v-btn>
-                <v-btn icon @click="notificationDrawer = !notificationDrawer">
-                    <v-icon>mdi-bell-outline</v-icon>
-                </v-btn>
+                <VBtn icon="mdi-magnify"></VBtn>
+                <VBtn @click="notificationDrawer = !notificationDrawer" icon="mdi-bell-outline"></VBtn>
                 <ToolbarDivider />
-                <v-btn icon>
-                    <v-icon>mdi-translate</v-icon>
-                </v-btn>
-                <v-btn icon @click="settingsDrawer = !settingsDrawer">
-                    <v-icon>mdi-cog-outline</v-icon>
-                </v-btn>
+                <VBtn icon="mdi-translate"></VBtn>
+                <VBtn @click="settingsDrawer = !settingsDrawer" icon="mdi-cog-outline" ></VBtn>
                 <ToolbarDivider />
-                <v-btn icon>
-                    <v-icon>mdi-login</v-icon>
-                </v-btn>
+                <VBtn icon="mdi-login"></VBtn>
             </template>
         </AppBar>
         <VMain>
@@ -46,6 +36,7 @@ const theme = ref('dark');
 const navigationDrawer = ref(true);
 const notificationDrawer = ref(false);
 const settingsDrawer = ref(false);
+
 const breadcrumbs = [{ title: 'Ticket', disabled: false, href: 'ticket' }, { title: 'Overview', disabled: false, href: 'overview' }];
 </script>
 
