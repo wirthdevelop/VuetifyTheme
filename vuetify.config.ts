@@ -42,6 +42,8 @@ export default {
         MainRow: 'VRow',
         MainCol: 'VCol',
         MainSubCol: 'VCol',
+        VCardMain: 'VCard',
+        VCardAction: 'VCard',
     },
     defaults: {
         App: {
@@ -60,9 +62,11 @@ export default {
         },
         NotificationDrawer: {
             location: 'right',
+            width: 300,
         },
         SettingsDrawer: {
             location: 'right',
+            width: 300,
         },
         ToolbarDivider: {
             vertical: true,
@@ -71,14 +75,21 @@ export default {
             length: 18,
         },
         MainRow: {
-            noGutters: true,
-            class: 'mainContant'
+            noGutters: false,
+            class: 'mainContant',
+            style: [{ margin: '0px' }],
         },
         MainCol: {
-            cols: '9'
+            cols: '9',
         },
         MainSubCol: {
-            cols: '3'
+
+        },
+        VCardMain: {
+            class: 'v-card--main',
+        },
+        VCardAction: {
+            class: 'v-card--action',
         }
     }
 } satisfies ExternalVuetifyOptions;

@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/global.scss'],
   components: [
     {
+      path: '~/components',
       pathPrefix: false,
     },
   ],

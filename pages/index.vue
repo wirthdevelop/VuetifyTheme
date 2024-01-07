@@ -1,16 +1,14 @@
 <template>
-    <MainContainer>
-        <MainRow>
-            <MainCol>
-                <div>
-                    The main of the page
-                </div>
-            </MainCol>
-            <MainSubCol>
-                <div>
-                    The main of the page
-                </div>
-            </MainSubCol>
-        </MainRow>
-    </MainContainer>
+    <MainRow>
+        <MainCol>
+            <Ticket></Ticket>
+        </MainCol>
+        <MainSubCol>
+            <ActionPanel>
+                <ActionItem></ActionItem>
+                <ActionItem></ActionItem>
+                <ActionItem></ActionItem>
+            </ActionPanel>
+        </MainSubCol>
+    </MainRow>
 </template>
