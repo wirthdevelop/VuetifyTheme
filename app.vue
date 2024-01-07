@@ -47,4 +47,7 @@ const breadcrumbs = [{ title: 'Ticket', disabled: false, href: 'ticket' }, { tit
 
 <style lang="scss">
 @import url("~/assets/styles/global.scss");
+body {
+    font-family: "Open Sans", sans-serif;
+}
 </style>

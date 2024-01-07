@@ -1,7 +1,23 @@
 @font-face {
     font-family: "Open Sans", sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap") format("woff");
-    font-weight: normal;
     font-style: normal;
+    font-weight: 300;
     font-display: swap;
+    src: url('/public/fonts/OpenSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/public/fonts/OpenSans-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/public/fonts/OpenSans-Bold.ttf') format("truetype");
 }
