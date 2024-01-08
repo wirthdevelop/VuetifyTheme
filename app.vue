@@ -1,14 +1,14 @@
 <template>
-    <App :theme="theme">
-        <NavigationDrawer v-model="navigationDrawer">
-            <NavigationList>
+    <VApp :theme="theme">
+        <VNavigationDrawer v-model="navigationDrawer">
+            <VList>
                 <VListItem prepend-icon="mdi-home-city" title="Home" value="home"></VListItem>
                 <VListItem prepend-icon="mdi-account" title="My Account" value="account"></VListItem>
                 <VListItem prepend-icon="mdi-account-group-outline" title="Users" value="users"></VListItem>
-            </NavigationList>
-        </NavigationDrawer>
-        <SettingsDrawer v-model="settingsDrawer"></SettingsDrawer>
-        <AppBar>
+            </VList>
+        </VNavigationDrawer>
+        <VNavigationDrawerSettings v-model="settingsDrawer"></VNavigationDrawerSettings>
+        <VAppBar>
             <template v-slot:prepend>
                 <VAppBarNavIcon @click="navigationDrawer = !navigationDrawer"></VAppBarNavIcon>
                 <VBreadcrumbs :items="breadcrumbs"></VBreadcrumbs>
@@ -16,18 +16,18 @@
             <template v-slot:append>
                 <VBtn icon="mdi-magnify"></VBtn>
                 <VBtn @click="notificationDrawer = !notificationDrawer" icon="mdi-bell-outline"></VBtn>
-                <ToolbarDivider />
+                <VDivider />
                 <VBtn icon="mdi-translate"></VBtn>
                 <VBtn @click="settingsDrawer = !settingsDrawer" icon="mdi-cog-outline" ></VBtn>
-                <ToolbarDivider />
+                <VDivider />
                 <VBtn icon="mdi-login"></VBtn>
             </template>
-        </AppBar>
+        </VAppBar>
         <VMain>
             <NuxtPage />
         </VMain>
-        <NotificationDrawer v-model="notificationDrawer"></NotificationDrawer>
-    </App>
+        <VNavigationDrawerNotification v-model="notificationDrawer"></VNavigationDrawerNotification>
+    </VApp>
 </template>
 
 <script setup lang="ts">
@@ -41,7 +41,7 @@ const breadcrumbs = [{ title: 'Ticket', disabled: false, href: 'ticket' }, { tit
 </script>
 
 <style lang="scss">
-@import url("~/assets/styles/global.scss");
+@import url("~/assets/global/fonts.scss");
 
 body {
     font-family: "Open Sans", sans-serif;

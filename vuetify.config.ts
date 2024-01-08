@@ -31,65 +31,55 @@ export default {
         messages: { zhHans, en, de }
     },
     aliases: {
-        App: 'VApp',
-        AppBar: 'VAppBar',
-        ToolbarDivider: 'VDivider',
-        NavigationDrawer: 'VNavigationDrawer',
-        NavigationList: 'VList',
-        NotificationDrawer: 'VNavigationDrawer',
-        SettingsDrawer: 'VNavigationDrawer',
-        MainContainer: 'VContainer',
-        MainRow: 'VRow',
-        MainCol: 'VCol',
-        MainSubCol: 'VCol',
+        VNavigationDrawerNotification: 'VNavigationDrawer',
+        VNavigationDrawerSettings: 'VNavigationDrawer',
+        VRowMain: 'VRow',
+        VColMain: 'VCol',
+        VColMainSub: 'VCol',
         VCardMain: 'VCard',
-        VCardAction: 'VCard',
     },
     defaults: {
-        App: {
+        VApp: {
             fullHeight: true,
         },
-        NavigationDrawer: {
+        VAppBar: {
+            VDivider: {
+                vertical: true,
+                inset: true,
+                style: [{ height: '16px' }, { 'margin-top': 'auto'}, { 'margin-bottom': 'auto'}, { 'margin-left': '6px'}, { 'margin-right': '6px'}],
+                length: 18,
+            }
+        },
+        VNavigationDrawer: {
             location: 'left',
             permanent: true,
             floating: true,
             rail: false,
             width: 300,
+
+            VList: {
+                density: 'compact',
+                nav: true,
+            }
         },
-        NavigationList: {
-            density: 'compact',
-            nav: true,
-        },
-        NotificationDrawer: {
+        VNavigationDrawerNotification: {
             location: 'right',
             width: 300,
         },
-        SettingsDrawer: {
+        VNavigationDrawerSettings: {
             location: 'right',
             width: 300,
         },
-        ToolbarDivider: {
-            vertical: true,
-            inset: true,
-            style: [{ height: '16px' }, { 'margin-top': 'auto'}, { 'margin-bottom': 'auto'}, { 'margin-left': '6px'}, { 'margin-right': '6px'}],
-            length: 18,
-        },
-        MainRow: {
+        VRowMain: {
             noGutters: false,
-            class: 'mainContant',
+            class: 'v-row--main',
             style: [{ margin: '0px' }],
         },
-        MainCol: {
-            cols: '9',
-        },
-        MainSubCol: {
-
+        VColMain: {
+            cols: '8',
         },
         VCardMain: {
-            class: 'v-card--main',
+            variant: ['action', 'main'],
         },
-        VCardAction: {
-            class: 'v-card--action',
-        }
     }
 } satisfies ExternalVuetifyOptions;

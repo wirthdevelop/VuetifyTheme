@@ -1,19 +1,11 @@
-.v-field--variant-yellow {
-    background: yellow;
-}
-
-.v-field--variant-green {
-    background: green;
-}
-
-.basic {
-    background: gray;
-}
-
-.v-card--main {
+.v-card--variant-main {
     height: 600px;
 }
 
-.v-card--action {
-    margin-bottom: 16px;
+.v-card--variant-action {
+    margin-bottom: 8px;
+}
+
+.v-row--main {
+    max-width: 1200px;
 }

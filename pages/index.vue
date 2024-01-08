@@ -1,14 +1,14 @@
 <template>
-    <MainRow>
-        <MainCol>
+    <VRowMain>
+        <VColMain>
             <Ticket></Ticket>
-        </MainCol>
-        <MainSubCol>
+        </VColMain>
+        <VColMainSub>
             <ActionPanel>
                 <ActionItem></ActionItem>
                 <ActionItem></ActionItem>
                 <ActionItem></ActionItem>
             </ActionPanel>
-        </MainSubCol>
-    </MainRow>
+        </VColMainSub>
+    </VRowMain>
 </template>
