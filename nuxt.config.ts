@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  css: ['~/assets/global/fonts.scss'],
+  css: ['~/assets/styles/fonts.scss'],
   components: [
     {
       path: '~/components',
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   vuetify: {
     moduleOptions: {
       styles: {
-        configFile: './assets/vuetify/settings.scss'
+        configFile: './assets/styles/settings.scss'
       }
     },
     vuetifyOptions: './vuetify.config.ts'

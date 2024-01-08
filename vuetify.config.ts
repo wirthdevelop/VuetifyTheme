@@ -1,28 +1,15 @@
 import type { ExternalVuetifyOptions } from 'vuetify-nuxt-module';
 import { en, de, zhHans } from 'vuetify/locale';
-
-// const themeInternalLight: ThemeDefinition = {
-//     dark: false,
-//     colors: {
-//         background: '#FFFFFF',
-//     },
-// }
-
-// const themeInternalDark: ThemeDefinition = {
-//     dark: true,
-//     colors: {
-//         background: '#000000',
-//     },
-// }
+import { lightTheme, darkTheme } from './assets/styles/theme.config';
 
 export default {
     directives: true,
     labComponents: true,
     theme: {
-        defaultTheme: 'light',
+        defaultTheme: 'dark',
         // themes: {
-        //     themeInternalLight,
-        //     themeInternalDark
+        //     lightTheme,
+        //     darkTheme
         // }
     },
     locale: {
@@ -38,16 +25,20 @@ export default {
         VColMain: 'VCol',
         VColMainSub: 'VCol',
         VCardMain: 'VCard',
+        VCardMainSub: 'VCard',
     },
     defaults: {
         VApp: {
             fullHeight: true,
         },
         VAppBar: {
+            VBtn: {
+                rounded: true,
+            },
             VDivider: {
                 vertical: true,
                 inset: true,
-                style: [{ height: '16px' }, { 'margin-top': 'auto'}, { 'margin-bottom': 'auto'}, { 'margin-left': '6px'}, { 'margin-right': '6px'}],
+                style: [{ height: '16px' }, { 'margin-top': 'auto' }, { 'margin-bottom': 'auto' }, { 'margin-left': '6px' }, { 'margin-right': '6px' }],
                 length: 18,
             }
         },
@@ -84,7 +75,12 @@ export default {
             cols: '8',
         },
         VCardMain: {
-            variant: ['action', 'main'],
+            class: 'v-card--main',
+            // variant: 'elevated',
         },
-    }
+        VCardMainSub: {
+            class: 'v-card--main-sub',
+            // variant: 'elevated',
+        }
+    },
 } satisfies ExternalVuetifyOptions;
