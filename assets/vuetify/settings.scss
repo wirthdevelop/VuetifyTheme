@@ -1,3 +1,7 @@
+@forward 'vuetify/settings' with (
+    $color-pack: false,
+);
+
 .v-card--variant-main {
     height: 600px;
 }

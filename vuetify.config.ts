@@ -32,6 +32,7 @@ export default {
     },
     aliases: {
         VNavigationDrawerNotification: 'VNavigationDrawer',
+        VNavigationDrawerHistory: 'VNavigationDrawer',
         VNavigationDrawerSettings: 'VNavigationDrawer',
         VRowMain: 'VRow',
         VColMain: 'VCol',
@@ -63,6 +64,10 @@ export default {
             }
         },
         VNavigationDrawerNotification: {
+            location: 'right',
+            width: 300,
+        },
+        VNavigationDrawerHistory: {
             location: 'right',
             width: 300,
         },

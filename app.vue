@@ -15,7 +15,10 @@
             </template>
             <template v-slot:append>
                 <VBtn icon="mdi-magnify"></VBtn>
-                <VBtn @click="notificationDrawer = !notificationDrawer" icon="mdi-bell-outline"></VBtn>
+                <VBtn @click="historyDrawer = !historyDrawer; notificationDrawer = false" icon="mdi-history"></VBtn>
+                <VBtn @click="notificationDrawer = !notificationDrawer; historyDrawer = false" icon="mdi-bell-outline"></VBtn>
+                <VDivider />
+                <VBtn icon="mdi-text-box-plus-outline"></VBtn>
                 <VDivider />
                 <VBtn icon="mdi-translate"></VBtn>
                 <VBtn @click="settingsDrawer = !settingsDrawer" icon="mdi-cog-outline" ></VBtn>
@@ -27,6 +30,7 @@
             <NuxtPage />
         </VMain>
         <VNavigationDrawerNotification v-model="notificationDrawer"></VNavigationDrawerNotification>
+        <VNavigationDrawerHistory v-model="historyDrawer"></VNavigationDrawerHistory>
     </VApp>
 </template>
 
@@ -35,6 +39,7 @@ const theme = ref('dark');
 
 const navigationDrawer = ref(true);
 const notificationDrawer = ref(false);
+const historyDrawer = ref(false);
 const settingsDrawer = ref(false);
 
 const breadcrumbs = [{ title: 'Ticket', disabled: false, href: 'ticket' }, { title: 'Overview', disabled: false, href: 'overview' }];
