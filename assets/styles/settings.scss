@@ -3,10 +3,18 @@
   $list-background: rgba(var(--v-theme-surface)),
 );
 
+@import "vuetify/settings";
+@import "vuetify/styles";
+@import "vuetify/tools";
+
 $list-padding: 8px;
 
 .v-row--main {
     max-width: 1200px;
+}
+
+.v-col--main-sub {
+    padding-left: 0 !important;
 }
 
 .v-card--main {

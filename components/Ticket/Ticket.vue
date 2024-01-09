@@ -1,5 +1,5 @@
 <template>
-    <VCardMain class="mx-auto my-8" elevation="16">
+    <VCardMain>
         <VCardItem>
             <VCardTitle>
                 Card title

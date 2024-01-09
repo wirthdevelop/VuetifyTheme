@@ -1,4 +1,4 @@
-export const aliasesSettings: Record<string, "VNavigationDrawer" | "VRow" | "VCol" | "VCard"> = {
+export const aliases: Record<string, "VNavigationDrawer" | "VRow" | "VCol" | "VCard"> = {
     VNavigationDrawerNotification: 'VNavigationDrawer',
     VNavigationDrawerHistory: 'VNavigationDrawer',
     VNavigationDrawerSettings: 'VNavigationDrawer',
@@ -9,7 +9,7 @@ export const aliasesSettings: Record<string, "VNavigationDrawer" | "VRow" | "VCo
     VCardMainSub: 'VCard',
 }
 
-export const defaultSettings = {
+export const defaults = {
     VApp: {
         fullHeight: true,
     },
@@ -55,6 +55,9 @@ export const defaultSettings = {
     },
     VColMain: {
         cols: '8',
+    },
+    VColMainSub: {
+        class: 'v-col--main-sub',
     },
     VCardMain: {
         class: 'v-card--main',
