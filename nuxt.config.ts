@@ -2,7 +2,17 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
-  css: ['~/assets/styles/fonts.scss'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @import "@/assets/styles/overriding.scss";
+          `
+        }
+      }
+    }
+  },
   components: [
     {
       path: '~/components',
@@ -13,11 +23,6 @@ export default defineNuxtConfig({
     'vuetify-nuxt-module', '@nuxtjs/i18n'
   ],
   vuetify: {
-    moduleOptions: {
-      styles: {
-        configFile: './assets/styles/settings.scss'
-      }
-    },
     vuetifyOptions: './vuetify.config.ts'
   }
 })

@@ -57,7 +57,7 @@ export const defaults = {
         cols: '8',
     },
     VColMainSub: {
-        class: 'v-col--main-sub',
+        class: 'pl-0',
     },
     VCardMain: {
         class: 'v-card--main',
