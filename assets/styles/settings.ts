@@ -50,8 +50,7 @@ export const defaults = {
     },
     VRowMain: {
         noGutters: false,
-        class: 'v-row--main',
-        style: [{ margin: '0px' }],
+        style: [{ margin: '0px' }, { 'max-width': '1200px' }],
     },
     VColMain: {
         cols: '8',
@@ -60,11 +59,9 @@ export const defaults = {
         class: 'pl-0',
     },
     VCardMain: {
-        class: 'v-card--main',
-        // variant: 'elevated',
+        styles: [{ height: '600px' }],
     },
     VCardMainSub: {
         class: 'v-card--main-sub',
-        // variant: 'elevated',
     }
 }

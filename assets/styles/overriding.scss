@@ -31,20 +31,6 @@
     src: url('/public/fonts/OpenSans-Bold.ttf') format("truetype");
 }
 
-$list-padding: 8px;
-
-.v-col--main-sub {
-    padding-left: 0;
-}
-
-.v-row--main {
-    max-width: 1200px;
-}
-
-.v-card--main {
-    height: 600px;
-}
-
 .v-card--main-sub {
-    margin-bottom: $list-padding;
+    margin-bottom: $list-nav-padding;
 }
