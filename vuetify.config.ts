@@ -7,7 +7,7 @@ export default {
     directives: true,
     labComponents: true,
     theme: {
-        defaultTheme: 'light',
+        defaultTheme: 'darkTheme',
         themes: {
             lightTheme,
             darkTheme,

@@ -35,7 +35,8 @@
 </template>
 
 <script setup lang="ts">
-const theme = ref('dark');
+const defaultTheme = useTheme();
+const theme = defaultTheme.global.name.value;
 
 const navigationDrawer = ref(true);
 const notificationDrawer = ref(false);
